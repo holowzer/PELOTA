@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Voyage";
+  src: url(fonts/455b7695d99ebe5ca036e1ebe55b430d.otf);
+}
+@font-face {
+  font-family: "manrope";
+  src: url(fonts/f2b1f0dca876fc6b577f7945a4be9c93.ttf);
+}
+html,
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Voyage";
+  padding: 0;
+  margin: 0;
+}
+body .loadingScreen {
+  background: #000;
+  z-index: 600;
+  position: absolute;
+  transform: translateY(0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .loadingScreen h1 {
+  color: #fff;
+  letter-spacing: 10px;
+  margin: 0;
+  font-family: "Voyage";
+}
+body .loadingScreen .fakeLoaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+body .loadingScreen .fakeLoaderContainer .fakeLoaderWhite {
+  width: 300px;
+  overflow: hidden;
+  height: 3px;
+  background: #ccc;
+}
+body .loadingScreen .fakeLoaderContainer .fakeLoaderWhite .yellowFiller {
+  background: rgba(15,70,0,0.6);
+  width: 300px;
+  height: 3px;
+  transform: translateX(-300px);
+}
+.globalWindow {
+  background: #000;
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 500;
+  height: 100%;
+}
+.globalWindow nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  padding-left: 30px;
+  letter-spacing: 10px;
+  font-weight: lighter;
+}
+.globalWindow .radialSun {
+  position: absolute;
+  z-index: 501;
+  border-radius: 500px;
+  top: 130px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 600px;
+  opacity: 0.9;
+  background: radial-gradient(circle, rgba(15,70,0,0.6) 0%, rgba(255,151,24,0) 56%, rgba(255,127,0,0) 100%);
+}
+.globalWindow .beforeExperienceSas {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  opacity: 0;
+  flex-direction: column;
+  perspective: 600px;
+  align-items: center;
+}
+.globalWindow .beforeExperienceSas .experienceStarter {
+  border-radius: 1000px;
+  border: #0f4600 2px solid;
+  transition: all 0.2s ease-out;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  font-size: 12px;
+  right: 60px;
+  cursor: pointer;
+  bottom: 60px;
+}
+.globalWindow .beforeExperienceSas .experienceStarter:hover {
+  border: #65c94b 2px solid;
+}
+.globalWindow .beforeExperienceSas h2 {
+  font-size: 120px;
+  z-index: 5;
+  position: relative;
+  pointer-events: none;
+  font-weight: lighter;
+  color: #fff;
+  line-height: 110px;
+  width: 1100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.globalWindow .beforeExperienceSas h4 {
+  color: #fff;
+  width: 700px;
+  font-size: 20px;
+  margin-top: -30px;
+  text-align: center;
+}
+.worldContainerBg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientLayer {
+  transition: all 0.5s ease;
+}
+.worldContainerBg .balloonWorld .bgGradientChange1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #2c74ba 0%, #272942 43%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #ffad3b 3%, #3e200a 41%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #7cc042 0%, #113220 44%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #ff5b5b 0%, #330d0d 44%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #5195ff 0%, #033739 44%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #118841 0%, #101130 54%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgGradientChange7 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #bb61eb 0%, #29053c 54%);
+  z-index: 1;
+}
+.worldContainerBg .balloonWorld .bgHidden {
+  opacity: 0;
+}
+.worldContainerBg .balloonWorld canvas {
+  background: transparent;
+  position: relative;
+  z-index: 30;
+}
+.textPlaceHolder {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  position: absolute;
+  z-index: 31;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.textPlaceHolder .leftInfo {
+  left: 100px;
+  top: 360px;
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  font-size: 2.8em;
+}
+.textPlaceHolder .rightInfo {
+  position: absolute;
+  right: 70px;
+  top: 300px;
+  width: 400px;
+}
+.textPlaceHolder p {
+  text-transform: capitalize;
+  font-family: "manrope";
+  letter-spacing: 1px;
+}
+.textPlaceHolder h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.revealInfo {
+  opacity: 1;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
