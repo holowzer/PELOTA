@@ -6,6 +6,25 @@
   font-family: "manrope";
   src: url(fonts/f2b1f0dca876fc6b577f7945a4be9c93.ttf);
 }
+.experienceStarter {
+  border-radius: 1000px;
+  border: #0f4600 2px solid;
+  transition: all 0.2s ease-out;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  font-size: 12px;
+  right: 60px;
+  cursor: pointer;
+}
+.experienceStarter bottom 60px .experienceStarterhover {
+  border: #65c94b 2px solid;
+}
 html,
 body {
   position: fixed;
@@ -99,26 +118,6 @@ body .loadingScreen .fakeLoaderContainer .fakeLoaderWhite .yellowFiller {
   flex-direction: column;
   perspective: 600px;
   align-items: center;
-}
-.globalWindow .beforeExperienceSas .experienceStarter {
-  border-radius: 1000px;
-  border: #0f4600 2px solid;
-  transition: all 0.2s ease-out;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  font-size: 12px;
-  right: 60px;
-  cursor: pointer;
-  bottom: 60px;
-}
-.globalWindow .beforeExperienceSas .experienceStarter:hover {
-  border: #65c94b 2px solid;
 }
 .globalWindow .beforeExperienceSas h2 {
   font-size: 120px;
@@ -229,6 +228,24 @@ body .loadingScreen .fakeLoaderContainer .fakeLoaderWhite .yellowFiller {
   left: 0;
   display: flex;
 }
+.textPlaceHolder .exitButton {
+  border-radius: 1000px;
+  border: #0f4600 2px solid;
+  transition: all 0.2s ease-out;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  z-index: 10001;
+  align-items: center;
+  color: #fff;
+  width: 120px;
+  top: 28px;
+  height: 120px;
+  position: absolute;
+  font-size: 12px;
+  right: 30px;
+  cursor: pointer;
+}
 .textPlaceHolder .leftInfo {
   left: 10px;
   bottom: -30px;
@@ -253,8 +270,49 @@ body .loadingScreen .fakeLoaderContainer .fakeLoaderWhite .yellowFiller {
   letter-spacing: 10px;
   font-size: 2em;
 }
+.happyEnding {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateY(100vh);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  align-items: center;
+  left: 0;
+  background: #000;
+  z-index: 1000;
+}
+.happyEnding h2 {
+  font-size: 5em;
+  text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 800px;
+}
+.happyEnding .endingButton {
+  position: relative;
+  text-transform: uppercase;
+  right: auto;
+  bottom: auto;
+}
 .revealInfo {
   opacity: 1;
+}
+.exitButton {
+  pointer-events: auto;
+}
+.goUpstairs {
+  transform: translateY(0);
+  opacity: 1;
+}
+.beginExperience {
+  bottom: 30px;
 }
 
 
